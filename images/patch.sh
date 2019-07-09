@@ -28,4 +28,4 @@ mv ${dist_dir}-tmp/install/hwe-netboot/ubuntu-installer/amd64/initrd.gz ${dist_d
 
 rm -rf ${dist_dir}-tmp
 
-cp ../ks.cfg ${dist_dir}/
+cp ks.cfg ${dist_dir}/
