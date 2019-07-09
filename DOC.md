@@ -43,7 +43,11 @@ The script will give you a live indication of what's going on. After it finishes
 
 The next step is to create the actual ISO image, that could be used with say VMware or burned to a pen drive. Here you will need to switch to Windows, for ease of use. The small programm [ImgBurn](http://www.imgburn.com/index.php?act=download) does the job. Copy the `images` directory over to Windows.
 
-After installing it, open it up and choose the *build* mode ("create image file files/folders"). As for the source, you will need to select the `ubuntu-18.04-netinstall` folder. As for destination, choose your desired destination folder and add your desired name of your ISO at the end. The important part is hidden under the *Advanced / Bootable Disc* tab. Here you wil need to make changes according to [this picture](ImgBurnOptions.jpg). The *Boot Image* can be found under `ubuntu-18.04-netinstall\boot\grub\efi.img`. Leave everything else as is.
+After installing it, open it up and choose the *build* mode ("create image file files/folders"). As for the source, you will need to select the `ubuntu-18.04-netinstall` folder. As for destination, choose your desired destination folder and add your desired name of your ISO at the end. The important part is hidden under the *Advanced / Bootable Disc* tab. Here you wil need to make changes according to this picture:
+
+![test](ImgBurnOptions.jpg "ImgBurn Settings II")
+
+The *Boot Image* can be found under `ubuntu-18.04-netinstall\boot\grub\efi.img`. Leave everything else as is.
 
 You can then start the build process. You are prompted with the message saying you had only selected one folder. Just accept with yes, then again accept with yes, and last but not least, click ok.
 
