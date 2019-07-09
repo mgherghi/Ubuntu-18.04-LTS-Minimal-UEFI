@@ -17,10 +17,15 @@ then
 fi
 
 rm -rf ${dist_dir}*
+
 7z x ${server_iso} -o${dist_dir}-tmp install/hwe-netboot/ubuntu-installer/amd64/linux
 7z x ${server_iso} -o${dist_dir}-tmp install/hwe-netboot/ubuntu-installer/amd64/initrd.gz
 7z x ${server_iso} -o${dist_dir} EFI
 7z x ${mini_iso} -o${dist_dir}
+
 mv ${dist_dir}-tmp/install/hwe-netboot/ubuntu-installer/amd64/linux ${dist_dir}/linux
 mv ${dist_dir}-tmp/install/hwe-netboot/ubuntu-installer/amd64/initrd.gz ${dist_dir}/initrd.gz
+
 rm -rf ${dist_dir}-tmp
+
+cp ../ks.cfg ${dist_dir}/
