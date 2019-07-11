@@ -51,4 +51,4 @@ The *Boot Image* can be found under `ubuntu-18.04-netinstall\boot\grub\efi.img`.
 
 You can then start the build process. You are prompted with the message saying you had only selected one folder. Just accept with yes, then again accept with yes, and last but not least, click ok.
 
-That's it, you are done. The ISO you created shoudl load up GRUB in EFI mode.
+That's it, you are done. The ISO you created should load up GRUB in EFI mode.
