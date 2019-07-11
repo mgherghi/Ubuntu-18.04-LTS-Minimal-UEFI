@@ -23,7 +23,7 @@ There are two options. The first and easiest would be executing the [`patch.sh`]
 
 The script therefore relies on `wget` doing its job. If the URLs provided to wget fail, the script as whole will fail. In case that happens, you will need to download the images yourself, place them in the `images` directory and rename them, respectively to  `mini.iso` and `ubuntu-18.04.2-server-amd64.iso`.
 
-The script also contains the copy command for the `ks.cfg`, a config file for [Ubuntu's automated install](https://help.ubuntu.com/lts/installation-guide/i386/ch04s06.html). If you are not familiar with this or just wish to not use it, delete the last line in the install script, which reads `cp ks.cfg ${dist_dir}/`. If you want to use automated install, you will likely need to customize the `ks.cfg` to your needs. The script will deploy it for you.
+The script also contains the copy command for the `ks.cfg`, a config file for [Ubuntu's automated install](https://help.ubuntu.com/lts/installation-guide/i386/ch04s06.html). If you are not familiar with this or just wish to not use it, don't worry, you will not need to use it nor will it hinder you. If you want to use automated install, you will likely need to customize the `ks.cfg` to your needs. The script will deploy it for you. A guide on how to use this feature is given in the link above.
 
 To make the script executable, open the terminal and navigate to the `images` directory. The command
 
