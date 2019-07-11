@@ -8,7 +8,7 @@ You can find detailed information about the process of building the ISO [here](D
 
 ## Prebuilt ISO
 
-If you would like to save youself the hassble of building your own ISO, you can use [this one](Ubuntu18.04LTSMinimalUEFINetInstallerUnscripted.iso). This ISO does not contain the `ks.cfg` for [automated installing](https://help.ubuntu.com/lts/installation-guide/i386/ch04s06.html). If you want to use this feature, you will need to go through the process yourself.
+If you would like to save youself the hassle of building your own ISO, you can use [this one](Ubuntu18.04LTSMinimalUEFINetInstallerUnscripted.iso). This ISO does not contain the `ks.cfg` for [automated installing](https://help.ubuntu.com/lts/installation-guide/i386/ch04s06.html). If you want to use this feature, you will need to go through the process yourself.
 
 ## Sources
 
