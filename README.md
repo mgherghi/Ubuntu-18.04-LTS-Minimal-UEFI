@@ -21,7 +21,7 @@ Although I need to mention that all this can also be accomplished with linux alo
 You can clone this repository to whereever you want on your system. Just use
 
 ``` BASH
-git clone -- https://github.com/Andevour/Ubuntu-18.04-LTS-Minimal-UEFI-NetInstaller.git
+cd && mkdir UbunutuMinimalUEFI && cd UbunutuMinimalUEFI && git clone -- https://github.com/Andevour/Ubuntu-18.04-LTS-Minimal-UEFI-NetInstaller.git .
 ```
 
 ### Step 1 - Setup of images under Linux
@@ -35,7 +35,7 @@ The script also contains the copy command for the `ks.cfg`, a config file for [U
 Make the script `patch.sh` executable if it isn't. Afterwards, execute it. The script will give you a live indication of what's going on. After it finishes, the images folder will contain the folder `ubuntu-18.04-netinstall`.
 
 ``` BASH
-sudo chmod +x patch.sh
+cd ~/UbuntuMinimalUEFI/resources/creation/ && sudo chmod +x patch.sh
 ./patch.sh
 ```
 
@@ -45,7 +45,7 @@ The next step is to create the actual ISO image, that could be used with say VMw
 
 After installing it, open it up and choose the *build* mode ("create image file files/folders"). As for the source, you will need to select the `ubuntu-18.04-netinstall` folder. As for destination, choose your desired destination folder and add the desired name of your ISO at the end. The important part is hidden under the *Advanced / Bootable Disc* tab. Here you wil need to make changes according to this picture:
 
-![test](ImgBurnOptions.jpg "ImgBurn Settings II")
+![test](./resources/pictures/ImgBurnOptions.jpg "ImgBurn Settings II")
 
 The *Boot Image* can be found under `ubuntu-18.04-netinstall\boot\grub\efi.img`. Leave everything else as is.
 
