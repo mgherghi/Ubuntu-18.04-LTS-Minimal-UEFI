@@ -1,1 +1,1 @@
-sudo mkisofs -U -A "Custom1804" -V "Custom1804" -volset "Custom1804" -J -joliet-long -r -v -T -o ../Custom1804.iso -b isolinux.bin -c boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e boot/grub/efi.img -no-emul-boot .
+sudo mkisofs -U -A "Custom" -V "Custom" -volset "Custom" -J -joliet-long -r -v -T -o ../Custom.iso -b isolinux.bin -c boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e boot/grub/efi.img -no-emul-boot .
