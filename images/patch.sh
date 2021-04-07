@@ -2,7 +2,7 @@
 
 set -eu
 
-server_iso='ubuntu-18.04.4-server-amd64.iso'
+server_iso='ubuntu-18.04.5-server-amd64.iso'
 mini_iso='mini.iso'
 dist_dir='ubuntu-18.04-netinstall'
 
